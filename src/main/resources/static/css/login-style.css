@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body{padding-top:100px;}
+.login{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.login{padding-top:15px;padding-bottom:15px;border:#c0c0c0 1px solid;}
+.login .login-box{border-right:#c0c0c0 1px solid;}
+#slider{height:35px;position:relative;padding-left:40px;}
+#slider p{top:7px;left:100px;color:#aaa;position:absolute;}
+#slider a{top:2px;height:29px;width:40px;margin-left:2px;font-size:20px;padding-left:8px;}

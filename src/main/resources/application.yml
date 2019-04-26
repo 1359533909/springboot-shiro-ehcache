@@ -1,0 +1,11 @@
+debug: true
+spring:
+  devtools:
+    restart:      enabled: true  #设置开启热部署
+  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource  #连接池
+
+mybatis:  type-aliases-package: com.mxl.demo.entity #设置别名

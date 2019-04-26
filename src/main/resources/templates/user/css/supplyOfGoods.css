@@ -1,0 +1,31 @@
+.middle-nav-font{
+    font-weight: bold;
+    text-align: left;
+    font-size: 17px;
+    padding-left: 4px;
+}
+.middle-nav-img{
+    margin-top: -4px;
+}
+.middle-nav-frame{
+    border: 1px solid rgb(214,214,214);
+    background-color:rgb(247,247,247);
+    margin-top: 10px;
+}
+.middle-nav-frame-element{
+    border-right: 1px solid rgb(214,214,214);
+    border-left: 1px solid rgb(214,214,214);
+    border-bottom: 1px dotted rgb(214,214,214);
+    background-color:rgb(247,247,247);
+}
+.middle-nav-right{
+    margin-top: 9px;
+}
+.above-solid{
+    border-top: 1px solid rgb(214,214,214);
+}
+.a-hover:hover{
+    cursor: pointer;
+    background-color: black;
+    color: red;
+}

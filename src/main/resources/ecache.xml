@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+    updateCheck="false"
+    dynamicConfig="true"
+    name="ehcache_retry">
+ 
+    <!-- 磁盘缓存位置 -->
+    <diskStore path="java.io.tmpdir/ehcache" />
+ 
+    <!-- 默认缓存 -->
+    <defaultCache maxEntriesLocalHeap="10000" 
+        eternal="false"
+        timeToIdleSeconds="120" 
+        timeToLiveSeconds="120" 
+        maxEntriesLocalDisk="10000000"
+        diskExpiryThreadIntervalSeconds="120" 
+        memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap" />
+    </defaultCache>
+ 
+    <!-- helloworld缓存 -->
+    <cache name="passwordRetryCache" 
+        maxElementsInMemory="2000" 
+        eternal="false"
+        timeToIdleSeconds="600" 
+        timeToLiveSeconds="600" 
+        overflowToDisk="false"
+        statistics="true" />
+</ehcache>

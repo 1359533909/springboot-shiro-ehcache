@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>货流中国-货源信息</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!--自定义的css样式-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" id="mygbc" href="css/globalBackgroudColor.css">
+    <link rel="stylesheet" href="css/supplyOfGoods.css">
+    <link href="images/favicon.ico" rel="shortcut icon">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--分页style-->
+    <style>
+        .tcdPageCode{padding: 15px 20px;text-align: left;color: #ccc;text-align:center;}
+        .tcdPageCode a{display: inline-block;color: #428bca;display: inline-block;height: 25px;	line-height: 25px;	padding: 0 10px;border: 1px solid #ddd;	margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode a:hover{text-decoration: none;border: 1px solid #428bca;}
+        .tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca;	border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}
+    </style>
+</head>
+<body class="header-sticky page-loading">
+<div class="loading-overlay">
+</div>
+
+<!-- Boxed -->
+<div class="boxed">
+    <div class="site-header header-v2">
+        <!--导航栏-->
+        <nav class="navbar mynavbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header col-md-3">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-brandmy" href="#"><img   src="images/logo.png"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-out-my" id="bs-example-navbar-collapse-1">
+                    <ul class="nav col-md-7  navbar-nav">
+                        <li><a class="navbar-inner-my" href="/index">首页</a></li>
+                        <li class="active"><a class="navbar-inner-my" href="/SupplyOfGoods">货源信息<span class="sr-only">(current)</span></a></li>
+                        <li><a class="navbar-inner-my" href="/SupplyOfCars">车源信息</a></li>
+                        <li><a class="navbar-inner-my" href="/SupplyOfAirplane">空运信息</a></li>
+                        <li><a class="navbar-inner-my" href="/NewsInfo">新闻信息</a></li>
+                        <li><a href="/aboutWe">关于我们</a></li>
+                    </ul>
+                    <ul class="nav col-md-2 navbar-nav navbar-right">
+                        <li><a href="#">登录</a></li>
+                        <li class="nav-shu-my hidden-xs">丨</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div><!-- /.site-header -->
+<!--查询导航栏-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="middle-nav-frame col-md-10 col-md-offset-1">
+                <form>
+                    <div class="col-md-3 middle-nav-right">
+                        <img class="middle-nav-img" src="images/supplyOfGoods/goods-ticon.gif"/>
+                        <span class="middle-nav-font">货源信息</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                        <span class="input-group-addon">出发地:</span>
+                        <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">目的地:</span>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-default" type="submit">搜索</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--查询结果-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="middle-nav-frame col-md-10 col-md-offset-1">
+                    <div class="col-md-3">
+                        <span>货源信息</span>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-3">
+                        共5269条信息 &nbsp;&nbsp; 第1/527页
+                    </div>
+            </div>
+            <div class="middle-nav-frame-element col-md-10 col-md-offset-1">
+                <table class="table table-hover">
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                    <tr class="a-hover">
+                        <th><div class="col-md-3">
+                            <span>潍坊市 → 邯郸市 <a>钢架 3吨</a></span>
+                        </div>
+                            <div class="col-md-4">
+                            </div></th>
+                        <th><div class="col-md-2">
+                        </div>
+                            <div class="col-md-3">
+                                <span>2019-04-05 19:33</span>
+                            </div></th>
+                    </tr>
+                </table>
+                <div class="tcdPageCode"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content-bottom-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="flat-wrapper">
+                        <div class="ft-wrapper clearfix">
+                            <div class="footer-50">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="counter">
+                                            <div class="counter-image"><i class="fa fa-building-o"></i></div>
+                                            <div class="numb-count" data-to="2223" data-speed="3000" data-waypoint-active="yes">2223</div>
+                                            <div class="counter-title">
+                                                企业数量
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+
+                                    <div class="col-md-4">
+                                        <div class="counter ft-style1">
+                                            <div class="counter-image"><i class="fa fa-group"></i></div>
+                                            <div class="numb-count" data-to="14444" data-speed="3000" data-waypoint-active="yes">14444</div>
+                                            <div class="counter-title">
+                                                员工数量
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+
+                                    <div class="col-md-4">
+                                        <div class="counter ft-style2">
+                                            <div class="counter-image"><i class="fa fa-globe"></i></div>
+                                            <div class="numb-count" data-to="15555" data-speed="3000" data-waypoint-active="yes">15555</div>
+                                            <div class="counter-title">
+                                                城市覆盖
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.footer-50 -->
+
+
+                        </div><!-- /.flat-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-widgets -->
+
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widge widget_text">
+                                <div class="textwidget">
+                                    <h2>西南货运 - 商业, 运输, 货流 &amp; 车源</h2>
+                                </div>
+                            </div><!-- /.widget_text -->
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_recent_entries">
+                                <h4 class="widget-title">最新新闻</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">提高效率 &amp; 扩大仓库</a>
+                                        <span class="post-date">5月 25, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html">空运货流进入管理阶段</a>
+                                        <span class="post-date">5月 25, 2018</span>
+                                    </li>
+                                </ul>
+                            </div><!-- /.widget_recent_entries -->
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">信息</h3>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu-footer-menu">
+                                        <li><a href="#">首页</a></li>
+                                        <li><a href="#">车源信息</a></li>
+                                        <li><a href="#">货源信息</a></li>
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">功能中心</a></li>
+                                        <li><a href="#">新闻播报</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_text information">
+                                <h3 class="widget-title">联系我们</h3>
+                                <div class="textwidget">
+                                    <p><strong>西南大学商贸学院学院路56号</strong></p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>  001-123-456-7890<br>
+                                        <i class="fa fa-envelope"></i>themesflat@qq.com
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>  007-123-456-7890<br>
+                                        <i class="fa fa-envelope"></i>themesflat@qq.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="flat-wrapper">
+                            <div class="ft-wrap clearfix">
+                                <div class="copyright">
+                                    <div class="copyright-content">
+                                        版权 &copy; 2019.公司名称版权所有<a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.ft-wrap -->
+                        </div><!-- /.flat-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+        </div>
+    </footer>
+
+    <!-- Go Top -->
+    <a class="go-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+</div>
+
+<!-- Javascript -->
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.easing.js"></script>
+<script type="text/javascript" src="javascript/owl.carousel.js"></script>
+<script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+<script type="text/javascript" src="javascript/jquery-countTo.js"></script>
+<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+<!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?sensor=false"></script>--->
+<!---<script type="text/javascript" src="javascript/gmap3.min.js"></script>--->
+<script type="text/javascript" src="javascript/jquery-validate.js"></script>
+<script type="text/javascript" src="javascript/switcher.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="javascript/slider.js"></script>
+
+<!--分页-->
+<script src="js/jquery.page.js"></script>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount:65,
+        current:1,
+        backFn:function(p){
+            console.log(p);
+        }
+    });
+</script>
+</body>
+</html>

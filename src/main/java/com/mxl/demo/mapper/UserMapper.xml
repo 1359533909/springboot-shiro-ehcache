@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mxl.demo.mapper.UserMapper">
+	<select id="findUserByName" parameterType="String" resultType="User">
+		SELECT * FROM USER WHERE username=#{username}
+	</select>
+	<select id="findUserById" parameterType="int" resultType="User">
+		SELECT * FROM USER WHERE id=#{value}
+	</select>
+</mapper>

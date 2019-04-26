@@ -1,0 +1,25 @@
+.reg_top {
+    background: url(../img/reg/reg_top_bg.jpg) repeat-x;
+    height: 60px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.h80{
+    height: 80px;
+}
+.lh80{
+    line-height: 80px;
+}
+.dasheddf {
+    border-bottom: #DFDFDF dashed 1px;
+}
+.ml15 {
+    margin-left: 15px;
+}
+.mb50{
+    margin-bottom: 50px;
+}
